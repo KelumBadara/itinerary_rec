@@ -1,0 +1,83 @@
+
+<!--   Popup wondow 1 : view more   -->
+
+ <div id="popup1" class="overlay">
+	<div class="popup">
+	
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+			<md-grid-list cols="2" [style.background]="'lightgray'">
+
+         <md-grid-tile colspan = "2">
+           <md-toolbar color="primary">Need to edit your itinerary</md-toolbar>
+         </md-grid-tile>
+
+   <md-grid-tile>
+     <p> Depart <input type="date" name="depart" id="depart"> </p>
+     
+   </md-grid-tile>
+   
+   <md-grid-tile>
+       <p> Return <input type="date" name="return" id="return"> </p>
+
+   </md-grid-tile>
+
+   <md-grid-tile >
+     <a href="">  <button class="current_location">No, thanks</button> </a>
+    
+   </md-grid-tile>
+   
+   <md-grid-tile >
+    
+     <a href="">  <button class="current_location" routerLink="/itinerary">Update and proceed</button> </a>
+ 
+   </md-grid-tile>
+  
+</md-grid-list>
+	<a class="close" routerLink="/home">&times;</a>
+		</div>
+	</div>
+</div>
+
+
+<!--   Popup wondow 2 : pin itinerary   -->
+
+<div id="popup2" class="overlay">
+	<div class="popup">
+	
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+
+				<md-grid-list cols="3" [style.background]="'lightgray'">
+         <md-grid-tile colspan = "3">
+     <md-toolbar color="primary">Pin itinerary as</md-toolbar>
+   </md-grid-tile>
+
+   <md-grid-tile colspan = "3">
+     <md-input placeholder="Name your itinerary ">
+              <span md-prefix>
+                <i class="material-icons">mode_edit</i>
+              </span>
+       </md-input>
+   </md-grid-tile>
+
+   <md-grid-tile>
+      &nbsp;
+   </md-grid-tile>
+
+    <md-grid-tile >
+     <a href="">  <button class="current_location">Pin</button> </a>
+  
+   </md-grid-tile>
+
+   <md-grid-tile>
+      &nbsp;
+   </md-grid-tile>
+
+   </md-grid-list>
+	<a class="close" href="#">&times;</a>
+		</div>
+	</div>
+</div>
+
